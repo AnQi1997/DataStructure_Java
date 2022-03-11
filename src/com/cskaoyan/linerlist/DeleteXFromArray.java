@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @Date: 2022/3/6 17:35
  * @Description:
  **/
-public class DeleteValueOfArray {
+public class DeleteXFromArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(arr));
@@ -16,7 +16,7 @@ public class DeleteValueOfArray {
         Scanner sc = new Scanner(System.in);
         int value = sc.nextInt();
         sc.close();
-        deleteValueOfArray(arr, value);
+        deleteXFromArray(arr, value);
         int[] newArr = new int[arr.length - 1];
         for (int i = 0; i < newArr.length; i++) {
             newArr[i] = arr[i];
@@ -24,7 +24,7 @@ public class DeleteValueOfArray {
         System.out.println(Arrays.toString(newArr));
     }
 
-    private static void deleteValueOfArray(int[] arr, int value) {
+    private static void deleteXFromArray(int[] arr, int value) {
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == value) {

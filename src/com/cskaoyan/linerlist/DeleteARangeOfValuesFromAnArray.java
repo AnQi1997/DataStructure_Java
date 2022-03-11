@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @Date: 2022/3/11 18:26
  * @Description:
  **/
-public class DeleteValueOfRange {
+public class DeleteARangeOfValuesFromAnArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6};
         int s, t;
@@ -22,10 +22,10 @@ public class DeleteValueOfRange {
         } while (s > t);
         System.out.println(Arrays.toString(arr));
         System.out.println("删除后：");
-        deleteValueOfRange(arr, s, t);
+        deleteARangeOfValuesFromAnArray(arr, s, t);
     }
 
-    private static void deleteValueOfRange(int[] arr, int s, int t) {
+    private static void deleteARangeOfValuesFromAnArray(int[] arr, int s, int t) {
         int i = 0, k = 0;
         //找到第一个大于s的元素
         for (i = 0; i < arr.length && arr[i] < s; i++) ;

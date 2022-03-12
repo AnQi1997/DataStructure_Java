@@ -27,15 +27,17 @@ public class DeleteARangeOfValuesFromAnArray {
 
     private static void deleteARangeOfValuesFromAnArray(int[] arr, int s, int t) {
         int i = 0, k = 0;
-        //找到第一个大于s的元素
+        //找到第一个大于s的元素下标：i
         for (i = 0; i < arr.length && arr[i] < s; i++) ;
-        if (i > arr.length) {
-        }
-        //找到第一个大于t的元素
+        if (i > arr.length) return;
+        //找到第一个大于t的元素下标：k
         for (k = i; k < arr.length && arr[k] <= t; k++) ;
 
         //前移
-        for (; i < arr.length && k < arr.length; i++, k++) {
+        for (; i < arr.length; i++, k++) {
+            if("".equals(arr[k]) || arr[k] == 0) {
+                return;
+            }
             arr[i] = arr[k];
         }
         System.out.println(Arrays.toString(arr));

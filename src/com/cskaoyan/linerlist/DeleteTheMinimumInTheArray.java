@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @Date: 2022/3/6 16:58
  * @Description:
  **/
-public class DelteteMinInArray {
+public class DeleteTheMinimumInTheArray {
     public static void main(String[] args) {
         int[] arr = {1, 3, 5, 7, 10};
         System.out.println("删除前：");

@@ -34,6 +34,7 @@ public class DeleteARangeOfValuesFromAnArray {
         for (k = i; k < arr.length && arr[k] <= t; k++) ;
 
         //前移
+        //这一块不太会
         for (; i < arr.length; i++, k++) {
             if("".equals(arr[k]) || arr[k] == 0) {
                 return;
